@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="icon-bar">
+        <a class="active" href="#"><i class="fa fa-home"></i></a>
+
+        <h3 style="text-align: center;">
+          Javascript Questions and their Solutions
+        </h3>
+        <p style="text-align: center;">
+          Click on the questions from the menu to view the contents:
+        </p>
+
+        <div class="tab">
+          <button
+            class="tablinks"
+            onclick="openCity(event, 'First')"
+            id="defaultOpen"
+          >
+            First Question
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Second')">
+            Second Question
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Third')">
+            Third Question
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Fourth')">
+            Fourth Question
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Fifth')">
+            Fifth Question
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Sixth')">
+            Sixth Question
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Seventh')">
+            Seventh Question
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Eigth')">
+            Eigth Question
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Nineth')">
+            Nineth Question
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Tenth')">
+            Tenth Question
+          </button>
+        </div>
+
+        <!-- <div id="London" class="tabcontent"> -->
+        <div id="First" class="tabcontent">
+          <h3>
+            <u
+              >1. Accept an array from user upto 10 numbers, Take 1st number and
+              check Prime or not :
+            </u>
+          </h3>
+          <label>Enter the array size : </label>
+          <input type="number" id="sizeofarray" />
+          <button onclick="checkPrimeorNot()">checkPrimeorNot</button>
+          <p id="ar"></p>
+          <p id="result"></p>
+        </div>
+
+        <div id="Second" class="tabcontent">
+          <h3>
+            <u
+              >2. Accept an array from user upto 10 characters, Find Most
+              Frequent Number in this array:
+            </u>
+          </h3>
+          <label>Enter the array size : </label>
+          <input type="number" id="sizeofarray2" />
+          <button onclick="mostFrequentItem()">MostFrequentItem</button>
+          <p id="ar2"></p>
+          <p id="result2"></p>
+        </div>
+
+        <div id="Third" class="tabcontent">
+          <h3><u>3. Accept string and swap its case: </u></h3>
+          <label>Enter the string : </label>
+          <input type="text" id="textcontent" />
+          <button onclick="swapCharac()">swapCharacter</button>
+          <p id="ar3"></p>
+          <p id="result3"></p>
+        </div>
+        <div id="Fourth" class="tabcontent">
+          <h3><u>4. Accept array and find sum of squares: </u></h3>
+          <label>Enter the array size : </label>
+          <input type="number" id="sizeofarray3" />
+          <button onclick="sumofSq()">Sum Of Squares</button>
+          <p id="ar4"></p>
+          <p id="result4"></p>
+        </div>
+
+        <div id="Fifth" class="tabcontent">
+          <h3>
+            <u>5. Iterate from 1 to 15 and mention each as odd or even: </u>
+          </h3>
+          <label>Check odd or even from 1 to 15 : </label>
+          <button onclick="checkoddorEven()">CheckOddorEven</button>
+          <ul type="circle" id="list"></ul>
+        </div>
+
+        <div id="Sixth" class="tabcontent">
+          <h3><u>6. Truncate the string from the mentioned position: </u></h3>
+          <label>Enter the string : </label>
+          <input type="text" id="str" />
+          <label>Enter the position : </label>
+          <input type="number" id="sizeofarray4" />
+          <button onclick="truncString()">TruncateString</button>
+          <p id="ar6"></p>
+          <p id="result6"></p>
+        </div>
+        <div id="Seventh" class="tabcontent">
+          <h3><u>7. Find Larger number after getting 2 numbers: </u></h3>
+          <label>Enter the First number : </label> <br />
+          <input type="number" id="num1" /> <br />
+          <label>Enter the Second number : </label> <br />
+          <input type="number" id="num2" /> <br />
+          <br />
+          <button onclick="findLarge()">findLarge Function</button>
+          <br />
+          <p id="result7"></p>
+        </div>
+
+        <div id="Eigth" class="tabcontent">
+          <h3>
+            <u
+              >8. Use (for in)loop to read Object from an Array and Sort
+              Alphabetically :
+            </u>
+          </h3>
+          <label>Enter the size of array : </label> <br />
+          <input type="number" id="q8Size" /> <br />
+          <button onclick="sortObjects()">SortObjectsFromArray Function</button>
+          <br />
+          <p id="q8Result"></p>
+          <p id="q8Original"></p>
+          <p id="q8String"></p>
+          <p id="q8Number"></p>
+        </div>
+
+        <div id="Nineth" class="tabcontent">
+          <h3><u>9. Print Javascript in a desired pattern </u></h3>
+          <label>Display of Javascript : </label>
+          <button onclick="printJavascript()">printJavascript</button>
+          <p id="result9"></p>
+        </div>
+
+        <div id="Tenth" class="tabcontent">
+          <h3><u>10. Print ** in a desired pattern with user's choice </u></h3>
+          <label>Enter a number below 20 to display (*) in a pattern : </label>
+          <input type="number" id="size" /> <br />
+          <button onclick="printPattern()">print Pattern</button>
+          <p id="result10"></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container mt-14" id="footer">
+        <div class="row">
+          <div class="col col-sm-8">
+            <h1>Follow me</h1>
+            <div class="btn-group">
+              <a
+                class="btn btn-github btn-lg"
+                href="https://github.com/"
+                target="_blank"
+                ><i class="fa fa-github" aria-hidden="true"></i> github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
