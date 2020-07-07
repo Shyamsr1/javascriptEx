@@ -7,8 +7,8 @@
 .icon-bar a {
   float: left; /* Float links side by side */
   text-align: center; /* Center-align text */
-  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
-  padding: 12px 0; /* Some top and bottom padding */
+  width: 10%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 8px 0; /* Some top and bottom padding */
   transition: all 0.3s ease; /* Add transition for hover effects */
   color: white; /* White text color */
   font-size: 36px; /* Increased font size */
@@ -32,7 +32,7 @@ body {
   font-size: large;
   background: url("/javascript2.png") no-repeat 0; 
   opacity: 0.9;  
-  background-size: 2000px 1000px;   
+  background-size: 1600px 1000px;   
 }
 
 
@@ -42,7 +42,7 @@ body {
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   width: 30%;
-  height: 150px;
+  height: 100px;
 }
 
 /* Style the buttons inside the tab */
@@ -77,7 +77,7 @@ body {
   border: 1px solid #ccc;
   width: 70%;
   border-left: none;
-  height: 550px;
+  height: 605px;
   background-color: cadetblue;
   /* background: url('/book1.jpeg'); */
 }
