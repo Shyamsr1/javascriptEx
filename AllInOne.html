@@ -154,7 +154,7 @@ p {
   <body>
     <main>
       <div class="icon-bar">
-        <a class="active" href="#"><i class="fa fa-home"></i></a>
+        
 
         <h3 style="text-align: center;">
           Javascript Questions and their Solutions
@@ -198,6 +198,11 @@ p {
           <button class="tablinks" onclick="openCity(event, 'Tenth')">
             Tenth Question
           </button>
+          <button class="tablinks" onclick="topFunction()">
+            Go To First Question
+          </button>
+          <a class="active" href="#" onclick="topFunction()" style="width: 50px;"><i class="fa fa-home"></i> </a>
+
         </div>
 
         <!-- <div id="London" class="tabcontent"> -->
@@ -721,6 +726,10 @@ function openCity(evt, cityName) {
 document.getElementById("defaultOpen").click();
 
 
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 
     </script>
