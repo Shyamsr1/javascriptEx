@@ -1,6 +1,8 @@
 .icon-bar {
   width: 100%; /* Full-width */
-  background-color: rgb(109, 108, 108); /* Dark-grey background */
+  background-color: #FEE140;
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+  
   overflow: auto; /* Overflow due to float */
 }
 
@@ -30,9 +32,11 @@ body {
   font-style: oblique;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: large;
-  background: url("/javascript2.png") no-repeat 0; 
+  /* background: url("/javascript2.png") no-repeat 0;  */
   opacity: 0.9;  
   background-size: 1600px 1000px;   
+  background-color: #FEE140;
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
 }
 
 
@@ -48,7 +52,8 @@ body {
 /* Style the buttons inside the tab */
 .tab button {
   display: block;
-  background-color: inherit;
+  background-color: #FEE140;
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
   color: black;
   padding: 14px 10px;
   width: 100%;
@@ -62,7 +67,9 @@ body {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #FAACA8;
+background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+
 }
 
 /* Create an active/current "tab button" class */
@@ -77,9 +84,10 @@ body {
   border: 1px solid #ccc;
   width: 70%;
   border-left: none;
-  height: 605px;
-  background-color: cadetblue;
-  /* background: url('/book1.jpeg'); */
+  height: auto;
+  background-color: #FEE140;
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+  
 }
 
 .tabcontent::after {
@@ -124,3 +132,11 @@ p {
   color: #62bbff;
 }
 
+
+ #footer{
+    height: 20px;
+ }
+
+ #quest{
+   height: auto;
+ }
