@@ -22,15 +22,17 @@
     <style>
 .icon-bar {
   width: 100%; /* Full-width */
-  background-color: rgb(109, 108, 108); /* Dark-grey background */
+  background-color: #FEE140;
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+  
   overflow: auto; /* Overflow due to float */
 }
 
 .icon-bar a {
   float: left; /* Float links side by side */
   text-align: center; /* Center-align text */
-  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
-  padding: 12px 0; /* Some top and bottom padding */
+  width: 10%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 8px 0; /* Some top and bottom padding */
   transition: all 0.3s ease; /* Add transition for hover effects */
   color: white; /* White text color */
   font-size: 36px; /* Increased font size */
@@ -52,9 +54,11 @@ body {
   font-style: oblique;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: large;
-  background: url("/javascript2.png") no-repeat 0; 
+  /* background: url("/javascript2.png") no-repeat 0;  */
   opacity: 0.9;  
-  background-size: 2000px 1000px;   
+  background-size: 1600px 1000px;   
+  background-color: #FEE140;
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
 }
 
 
@@ -64,13 +68,14 @@ body {
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   width: 30%;
-  height: 150px;
+  height: 100px;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
   display: block;
-  background-color: inherit;
+  background-color: #FEE140;
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
   color: black;
   padding: 14px 10px;
   width: 100%;
@@ -84,7 +89,9 @@ body {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #FAACA8;
+background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+
 }
 
 /* Create an active/current "tab button" class */
@@ -99,9 +106,10 @@ body {
   border: 1px solid #ccc;
   width: 70%;
   border-left: none;
-  height: 550px;
-  background-color: cadetblue;
-  /* background: url('/book1.jpeg'); */
+  height: auto;
+  background-color: #FEE140;
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+  
 }
 
 .tabcontent::after {
@@ -147,6 +155,14 @@ p {
 }
 
 
+ #footer{
+    height: 20px;
+ }
+
+ #quest{
+   height: auto;
+ }
+
     </style>
 
 
@@ -154,8 +170,7 @@ p {
   <body>
     <main>
       <div class="icon-bar">
-        
-
+       
         <h3 style="text-align: center;">
           Javascript Questions and their Solutions
         </h3>
@@ -163,7 +178,7 @@ p {
           Click on the questions from the menu to view the contents:
         </p>
 
-        <div class="tab">
+        <div class="tab" id="quest">
           <button
             class="tablinks"
             onclick="openCity(event, 'First')"
@@ -201,7 +216,6 @@ p {
           <button class="tablinks" onclick="topFunction()">
             Scroll to top 
           </button>
-          
         </div>
 
         <!-- <div id="London" class="tabcontent"> -->
@@ -316,7 +330,7 @@ p {
     </main>
 
     <footer>
-      <div class="container mt-14" id="footer">
+      <div class="container mt-14" id="footer" style="margin-top: 50px;">
         <div class="row">
           <div class="col col-sm-8">
             <h1>Follow me</h1>
